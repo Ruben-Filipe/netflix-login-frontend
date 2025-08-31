@@ -1,0 +1,106 @@
+:root {
+    --login-body-bg-color: 0, 0, 0;
+    --header-color: #fff;
+    --text-color: #737373;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(22, 22, 22);
+    background-image: url('https://raw.githubusercontent.com/Larissakich/netflix_login/refs/heads/main/Netflix%20Login/assets/img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    margin: auto;
+}
+
+.logo {
+    padding: 24px 48px;
+}
+
+.logo >* img {
+    height: 40px;
+    width: 148px;
+}
+
+.login-body {
+    background-color: rgba(var(--login-body-bg-color), 0.75);
+    border-radius: 10px;
+    color: var(--text-color);    
+    margin: auto;
+    max-width: 450px;
+    padding: 60px;
+    max-width: 450px;
+    height: 550px;
+}
+
+.login-box h2 {   
+    color: var(--header-color)
+}
+
+.login-box input {
+    height: 50px;
+    width: 100%;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    margin-bottom: 25px;
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.submit {
+    height: 50px;
+    width: 100%;
+    background-color: #e50914;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.login-box button:hover {
+    background-color: #fc1722;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 10px;
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+}
+
+.facebook {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: rgb(var(--login-body-bg-color));
+        background-image: none;
+    }
+
+    .login-body {
+        border-radius: 0;
+    }   
+}
