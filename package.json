@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "DEV=true node index.js",
+    "start": "node index.js",
+    "test": "npx playwright test"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@playwright/test": "^1.55.0",
     "live-server": "^1.2.2"
   }
 }
