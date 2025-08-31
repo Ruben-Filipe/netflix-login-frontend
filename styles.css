@@ -41,7 +41,7 @@ body {
 }
 
 .login-box h2 {   
-    color: var(--header-color)
+    color: var(--header-color);
 }
 
 .login-box input {
@@ -79,19 +79,72 @@ body {
     cursor: pointer;
 }
 
-.footer {
-    margin-top: 10px;
-}
-
-.remember {
+.support {
     display: flex;
     justify-content: space-between;
 }
 
-.facebook {
+.login-footer {
     display: flex;
-    align-items: flex-start;
-    gap: 5px;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+}
+
+.remember span {
+    height: 45px;
+}
+
+.login-facebook {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: var(--text-color);
+}
+
+.login-facebook img {
+    height: 20px;
+    width: 20px;
+}
+
+.login-facebook span {
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+.login-facebook span {
+    color: var(--header-color)
+}
+
+.sign-up {
+    font-size: 16px;
+}
+
+.sign-up a {
+    color: var(--header-color);
+    text-decoration: none;
+}
+
+.sign-up a:hover {
+    text-decoration: underline;
+}
+
+.terms {
+    font-size: 13px;
+}
+
+.terms a {
+    text-decoration: none;
+    color: #0071eb;
+}
+
+.terms a:hover {
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 600px) {
